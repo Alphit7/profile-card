@@ -5,10 +5,9 @@ body {
   background-position: top -350px left -350px, bottom -550px right -350px;
   background-repeat: no-repeat;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 750px;
+  min-height: 100vh;
   overflow: hidden;
   font-family: "Kumbh Sans";
   font-weight: 400;
@@ -30,9 +29,10 @@ body {
 .photo {
   position: relative;
   top: 25%;
-  width: 30%;
+  width: 100px;
   border-radius: 50%;
   border: 3px solid white;
+  margin-bottom: 72px;
 }
 .interaction {
   width: 100%;
@@ -40,7 +40,9 @@ body {
   flex-direction: row;
   justify-content: space-around;
   border-top: 1px solid lightgray;
-  top: 25%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
 }
 section {
   position: relative;
@@ -51,33 +53,36 @@ section {
   flex-direction: row;
   justify-content: space-between;
   font-size: 16px;
+  width: 100%;
 }
 .username,
-.follow-number,
-.like-number,
-.photos-number {
+.number {
   font-weight: 700;
-  font-size: 16px;
 }
 .age,
 .location,
-.follow,
-.photos,
-.likes {
+.intitule {
   color: gray;
 }
 .infos {
-  height: 300px;
-  width: 40%;
+  height: 200px;
+  width: 150px;
   bottom: 15%;
 }
-.follow,
-.photos,
-.likes {
-  font-size: small;
+.intitule,
+.location {
+  font-size: 11px;
+}
+
+.location {
+  margin-top: 10px;
+}
+span {
+  display: block;
+  margin: 10px;
 }
 /* Styles pour les écrans de tablette et de téléphone */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 375px) {
   body {
     max-width: 600px;
     margin: 0 auto;
