@@ -1,0 +1,91 @@
+body {
+  background-color: #21aeb8;
+  background-image: url(/home/becode/Documents/profile-card/Assets/bg-pattern-top.svg),
+    url(/home/becode/Documents/profile-card/Assets/bg-pattern-bottom.svg);
+  background-position: top -350px left -350px, bottom -550px right -350px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: "Kumbh Sans";
+  font-weight: 400;
+}
+.profile {
+  border-radius: 20px;
+  width: 300px;
+  height: 350px;
+  background-color: white;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  background-image: url(/home/becode/Documents/profile-card/Assets/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: 110% 135px;
+}
+.photo {
+  position: relative;
+  top: 25%;
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-bottom: 72px;
+}
+.interaction {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 1px solid lightgray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+section {
+  position: relative;
+}
+.bio {
+  top: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 16px;
+  width: 100%;
+}
+.username,
+.number {
+  font-weight: 700;
+}
+.age,
+.location,
+.intitule {
+  color: gray;
+}
+.infos {
+  height: 200px;
+  width: 150px;
+  bottom: 15%;
+}
+.intitule,
+.location {
+  font-size: 11px;
+}
+
+.location {
+  margin-top: 10px;
+}
+span {
+  display: block;
+  margin: 10px;
+}
+/* Styles pour les écrans de tablette et de téléphone */
+@media screen and (max-width: 375px) {
+  body {
+    max-width: 600px;
+    margin: 0 auto;
+    background-position: top -550px left -650px, bottom -550px right -650px;
+  }
+}
